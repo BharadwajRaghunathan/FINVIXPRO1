@@ -1,0 +1,83 @@
+/* src/styles/Greeting.css */
+.greeting-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 50%, #0A0F1C, #1E3A8A 50%, #2A4066 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 30s ease-in-out infinite;
+    color: #E0E7FF;
+  }
+  
+  .greeting-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .greeting-card h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00DDEB;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 221, 235, 0.6);
+  }
+  
+  .quotes p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #E0E7FF;
+    font-style: italic;
+  }
+  
+  .neon-button {
+    padding: 12px 24px;
+    margin: 10px;
+    background: #00DDEB;
+    border: none;
+    border-radius: 8px;
+    color: #0A0F1C;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+    cursor: pointer;
+  }
+  
+  .neon-button:hover {
+    background: #4C78A8;
+    box-shadow: 0 0 20px rgba(0, 221, 235, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .greeting-card {
+      padding: 20px;
+      max-width: 90%;
+    }
+    .greeting-card h2 {
+      font-size: 2rem;
+    }
+    .quotes p {
+      font-size: 1rem;
+    }
+    .neon-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+  }

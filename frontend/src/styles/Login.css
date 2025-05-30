@@ -1,0 +1,102 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 50%, #0A0F1C, #1E3A8A 50%, #2A4066 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 30s ease-in-out infinite;
+    color: #E0E7FF;
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00DDEB;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 221, 235, 0.6);
+  }
+  
+  .login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-card input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #E0E7FF;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .login-card input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+  }
+  
+  .login-card .neon-button {
+    padding: 12px;
+    background: #00DDEB;
+    border: none;
+    border-radius: 8px;
+    color: #0A0F1C;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+    cursor: pointer;
+  }
+  
+  .login-card .neon-button:hover {
+    background: #4C78A8;
+    box-shadow: 0 0 20px rgba(0, 221, 235, 0.8);
+  }
+  
+  .login-card .error {
+    color: #FF6B6B;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .login-card p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .login-card a {
+    color: #00DDEB;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .login-card a:hover {
+    color: #4C78A8;
+    text-decoration: underline;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+  }
